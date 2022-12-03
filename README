@@ -1,0 +1,59 @@
+Matthew Kaltman, mkaltman
+2022 Spring CSE101 PA6
+README
+
+
+ Arithmetic.cpp
+----------------
+Arithmetic.cpp is the overall client file that is used to implement and test
+the full functionality of the BigInteger ADT. It performs several math operations
+of varying complexity to demonstrate the capabilites of BigInt 
+
+ BigInteger.cpp
+----------------
+ BigInteger.cpp is the actual implementation of BigInteger math operations as defined
+ inside of BigInt.h. it is written with the List ADT created in pa5 and features
+ several private helper functions in order to reduce the complexity of the
+ actual functions that do the BigInt operations.
+
+ BigInteger.h
+--------------
+BigInteger.h holds the public function definitions that are available to
+whatever client wants to use it. it does not define some helper functions and
+internal operations in order to maintain the security and effectiveness of its use
+
+ BigIntegerTest.cpp
+--------------------
+BigIntegerTest is what I used to do the tests for individual functions in order to 
+guarantee full functionality and to debug edge cases that were unconsidered during 
+original testing but that were encountered during the grading script testing
+
+List.cpp
+----------
+Written by me, List.cpp implements the functions described in List.h.
+This is the obvious brains of the operation, and hides unnecessary or
+sensitive data from the user in order to have full functionality.
+
+List.h
+--------
+Provided by Tantalo, List.h describes what functions are available to the
+client. also provides pre-conditions for use that must be met in order
+for correct functionality.
+
+ListTest.cpp
+--------------
+ListTest.cpp was created by me and implemented to pass the ListClient tests.In addition ListTest was used to test the corner cases and failed 
+tests from the grading script in order to efficiently debug. The entire 
+file is now commented out as I commented out passed tests in order 
+to keep it as simple as posssible to read and debug.
+
+Makefile
+---------
+Provided by Tantalo with minimal adjustments to allow list test and biginteger test
+to compile and run. controls creation/deletion of .o and bin files
+
+README
+-------
+look at us, who wouldve thought... not me ! Once again shout out to my
+boys andrew and vincent, goated tutors if I have ever witnessed it
+This is the readme where you read about my functions
